@@ -1,89 +1,349 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>RUNTECHSPACE - Events</title>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-<link href="assets/img/icon.png" rel="icon">
-<style>
-  body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #FF6B6B, #356BFF, #4CAF50, #FFD700, #E74C3C, #3498DB);
-    background-size: 600% 600%;
-    animation: gradientAnimation 10s ease infinite;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-  }
+  <title>RUNTECHSPACE - An Innovative Tech Hub</title>
+  <meta name="description" content="Empowering Tomorrow's Innovators! Empowering students nationwide with tech skills through teaching, bootcamps, hackathons, and dynamic competitions. Shape the future with RUNTECHSPACE">
+  <meta name="author" content="RUNTECHSPACE">
+  <meta name="robots" content="RUNTECHSPACE">
+  <meta property="og:title" content="RUNTECHSPACE - Empowering Tomorrow's Innovators!">
+  <meta property="og:description" content="Nurturing Tech Innovators in The Redeemer's University and Nationwide. Join the Future with RUNTECHSPACE!">
+  <meta property="og:image" content="assets/img/slide6.jpg">
+  <meta property="og:image:alt" content="RUNTECHSPACE">
+  <meta name="twitter:title" content="RUNTECHSPACE - Empowering Tomorrow's Innovators!">
+  <meta name="twitter:description" content="Nurturing Tech Innovators in The Redeemer's University and Nationwide. Join the Future with RUNTECHSPACE!">
+  <meta name="twitter:image" content="assets/img/slide6.jpg">
+  <meta name="twitter:image:alt" content="RUNTECHSPACE">
 
-  a {
-	color: #CCC;
-  text-decoration: none !important;
-  }
-  a:hover {
-	color: #F99;
-  }
-  .error-container {
-    text-align: center;
-    color: #fff;
-  }
-  .error-text {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-  }
-  .action-buttons {
-    display: flex;
+
+  <!-- Favicons -->
+  <link href="assets/img/icon.png" rel="icon">
+ 
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style1.css" rel="stylesheet">
+
+  <style>
+    /* Add this CSS to your existing stylesheet */
+
+/* Add this CSS to your existing stylesheet */
+
+.post-buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px; /* Increased the gap for more space */
+  margin-top: 10px;
+  padding-top: 30px;
+  color: white;
+}
+
+.btn {
+  text-transform: uppercase;
+  border-radius: 4px;
+  padding: 10px 20px; /* Increased padding for more space */
+  color: white;
+}
+
+.btn-pri {
+  background-color: #0094Ac;
+  color: #fff;
+  border: none;
+}
+.btn-pri:hover{
+    background-color: #0094Ac;
+}
+
+.btn-sec:hover{
+    background-color: #0094Ac;
+}
+
+.btn-sec {
+  background-color: #0094Ac;
+  color: #fff;
+  border: none;
+}
+
+.btn-sm {
+  font-size: 12px;
+  color: white;
+}
+
+/* Add responsive styles for small screens */
+@media (max-width: 768px) {
+  .post-buttons {
     flex-direction: column;
-    align-items: center;
-    margin-top: 1.5rem;
-  }
-  .action-button {
-    margin: 0.5rem;
-    padding: 0.5rem 1rem;
-    border: none;
-    border-radius: 5px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease;
-    text-align: center;
-  }
-  .action-button:hover {
-    background-color: #fff;
-    color: #333;
+    align-items: flex-start;
   }
 
-  @keyframes gradientAnimation {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
+  .btn {
+    margin-top: 10px; /* Increased margin for more space */
   }
-</style>
+}
+
+
+  </style>
+
 </head>
-<body>
-  <div class="error-container">
-    <div class="error-text">
-      No events added yet. Stay tuned
+
+<body class="index-page">
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top d-flex align-items-center">
+    <div class="container-fluid d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <img src="assets/img/logoii.png" alt=""> 
+      </a>
+
+      <!-- Nav Menu -->
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="events.html" class="active">Events</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <!--<li><a href="https://runtechspace.vercel.app" target="_blank">Test your Knowledge</a></li>-->
+          <!--<li><a href="#">Free Courses</a></li>-->
+          <li><a href="https://instagram.com/runtechspace?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D" target="_blank">Our Stories</a></li>
+          <li class="dropdown has-dropdown"><a href="#"><span>Collaborate</span> <i class="bi bi-chevron-down"></i></a>
+            <ul class="dd-box-shadow">
+              <li><a href="#" id="redirectLink" >Partnership</a></li>
+              <li><a href="https://wa.me/2348124793331?text=Hello%20Williams!%20We're%20excited%20to%20explore%20sponsorship%20options%20that%20align%20with%20our%20organization.%20Let's%20collaborate%20to%20empower%20tomorrow's%20innovators%20together!" target="_blank">Sponsorship</a></li>
+
+              
+              
+            </ul>
+          </li>
+          <li><a href="https://forms.office.com/e/eRKjNWKNaw">Become a Stack Lead</a></li>
+          
+        </ul>
+
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+       
+
+      </nav><!-- End Nav Menu -->
+
+
+      <a class="btn-getstarted" href="donate.html">Donate</a>
+
     </div>
-    <div class="action-buttons">
-      <button class="action-button" onclick="goBack()">Go Back</button>
-      <a class="action-button" href="https://chat.whatsapp.com/DfhuhbulYnYHWx4rBTFeOo">Meanwhile, join our WhatsApp community</a>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <section id="hero" class="hero">
+
+        <img src="assets/img/microsoftbootcamp.png" alt="" data-aos="fade-in">
+  
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-10">
+              <h2 data-aos="fade-up" data-aos-delay="100">Events</h2>
+              <p data-aos="fade-up" data-aos-delay="200">Events are not just about gatherings; they are opportunities to expand knowledge, connect with others, and spark new ideas.</p>
+            </div>
+            <div class="col-lg-12">
+                <p data-aos="fade-up" data-aos-delay="200">Scroll <a href="#recent-posts">▼</a></p>
+          </div>
+        </div>
+  
+    </section><!-- End Hero Section -->
+    
+  
+
+     <!-- Recent-posts Section - Home Page -->
+     <section id="recent-posts" class="recent-posts">
+
+      <!--  Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Upcoming Events</h2>
+        <p></p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-xl-6" data-aos="fade-up" data-aos-delay="100">
+            <article>
+
+              <div class="post-img">
+                <img src="assets/img/mathlab.jpg" alt="" class="img-fluid">
+              </div>
+
+              <p class="post-category">MATLAB Coding 
+                Challenge</p>
+
+              <h2 class="title">
+                Nigeria: MATLAB Coding Challenge 2023
+                <div class="post-buttons">
+                  <a href="assets/Mathlab2023.pdf" target="_blank">Read More</a>
+                  <a href="https://forms.office.com/pages/responsepage.aspx?id=ETrdmUhDaESb3eUHKx3B5ngE4YRdTAxAjhzKvbxIZp1UQ0VHTDJOVFc3WVAyU05ZMlpYSFhFV1pPTi4u">Register</a>
+                </div>
+              </h2>
+
+
+            </article>
+          </div><!-- End post list item -->
+
+          <div class="col-xl-6" data-aos="fade-up" data-aos-delay="200">
+            <article>
+
+              <div class="post-img">
+                <img src="assets/img/hackathon.jpg" alt="" class="img-fluid">
+              </div>
+            <!---
+              <p class="post-category">A Photo from Unsplash</p>
+             -->
+              <h2 class="title">
+               More Information Coming Soon.....
+               <!--
+                <div class="post-buttons">
+                  <a href="#">Read More</a>
+                  <a href="#">Register</a>
+                </div>
+             -->
+              </h2>
+           
+              
+
+            </article>
+          </div><!-- End post list item -->
+
+          
+
+        </div><!-- End recent posts list -->
+
+      </div>
+
+    </section><!-- End Recent-posts Section -->
+
+    <div class="container section-title" data-aos="fade-up">
+        <h2>Past Events</h2>
+        <p>Data Upload Undergoing....</p>
+      </div><!-- End Section Title -->
+
+  </main>
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-5 col-md-12 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span>RUNTECHSPACE</span>
+          </a>
+          <p>Empowering Tomorrow's Innovators, Today!</p>
+          <div class="social-links d-flex mt-4">
+            <a href="https://twitter.com/RunTechSpace_?t=GbFiRlnEsV7A6AwKJQl3IA&s=03" target="_blank"><i class="bi bi-twitter"></i></a>
+            <a href="https://instagram.com/runtechspace?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D" target="_blank"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.linkedin.com/company/runtechspace" target="_blank"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="index.html#about">About us</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="https://chat.whatsapp.com/DfhuhbulYnYHWx4rBTFeOo">WhatsApp Community</a></li>
+            
+            <li><a href="donate.html">Support RUNTECHSPACE</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Stack</h4>
+          <ul>
+            <li><a href="https://forms.gle/fQoq7UHmvxFhTARp9">Backend Development</a></li>
+            <li><a href="https://forms.gle/fQoq7UHmvxFhTARp9">Cybersecurity</a></li>
+            <li><a href="https://forms.gle/fQoq7UHmvxFhTARp9">Datascience and AI</a></li>
+            <li><a href="https://forms.gle/fQoq7UHmvxFhTARp9">Frontend Development</a></li>
+            <li><a href="https://forms.gle/fQoq7UHmvxFhTARp9">UI/UX</a></li>
+            
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+          <h4>Contact Us</h4>
+          <p>The Redeemer's University</p>
+          <p>Ede, Osun State</p>
+          <p>Nigeria</p>
+          <p class="mt-4"><strong>Phone:</strong> <span>+234 812 479 3331</span></p>
+          <p><strong>Email:</strong> <span>techspace@run.edu.ng</span></p>
+        </div>
+
+      </div>
     </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>&copy; <span>Copyright</span> <strong class="px-1">RUNTECHSPACE</strong> <span>All Rights Reserved</span></p>
+    
+      <div class="credits">
+       
+       All Illustration by <a href="https://storyset.com">Storyset</a>
+      </div>
+      <div class="credits">
+        
+        Designed by <a href="https://bootstrapmade.com/" target="_blank">BootstrapMade</a>
+      </div>
+    </div>
+
+  </footer><!-- End Footer -->
+
+  <a href="https://wa.me/2348124793331?text=Hello%20RUNTECHSPACE,%20I%20would%20like%20to%20ask%20some%20questions%20about" target="_blank" id="whatsapp" class="whatsapp d-flex align-items-center justify-content-center" title="Join our WhatsApp Community"><i class="bi bi-whatsapp"></i></a>
+
+  <div id="preloader">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
   </div>
 
+  <!-- Vendor JS Files -->
+
   <script>
-    function goBack() {
-      window.history.back();
-    }
+    document.getElementById("redirectLink").addEventListener("click", function(event) {
+      event.preventDefault(); // Prevent the default link behavior
+
+      var confirmRedirect = confirm("This link allows a direct message with our representative. Do you want to proceed?");
+
+      if (confirmRedirect) {
+        setTimeout(function() {
+          window.location.href = "https://wa.me/2348124793331?text=Hello%20Williams!%20We're%20excited%20to%20explore%20partnership%20options%20that%20align%20with%20our%20organization.%20Let's%20collaborate%20to%20empower%20tomorrow's%20innovators%20together!"; // Redirect after a delay
+        }, 2000); // 2000 milliseconds (2 seconds) delay
+      }
+    });
   </script>
+  
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
 </body>
+
 </html>
