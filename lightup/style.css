@@ -16201,6 +16201,54 @@ ul {
     font-weight: 300;
 }
 
+
+
+
+
+
+
+.fxt-template-layout30 .fxt-form textarea::-webkit-input-placeholder {
+    color: #a1a1a1;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.fxt-template-layout30 .fxt-form textarea::-moz-placeholder {
+    color: #a1a1a1;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.fxt-template-layout30 .fxt-form textarea:-moz-placeholder {
+    color: #a1a1a1;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.fxt-template-layout30 .fxt-form textarea:-ms-input-placeholder {
+    color: #a1a1a1;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .fxt-template-layout30 .fxt-form .fxt-form-row {
     display: flex;
     flex-wrap: wrap;
