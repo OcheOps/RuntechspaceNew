@@ -1,64 +1,162 @@
-<!doctype html>
-<html class="no-js" lang="">
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>RCCG Light Up Crusade Ede - New Converts</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="logo.png">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="lightup/css/bootstrap.min.css">
-    <!-- Fontawesome CSS -->
-    <link rel="stylesheet" href="lightup/css/fontawesome-all.min.css">
-    <!-- Flaticon CSS -->
-    <link rel="stylesheet" href="lightup/font/flaticon.css">
-    <!-- Google Web Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="lightup/style.css">
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        }
 
+        body {
+            background-color: #f5f5f5;
+            min-height: 100vh;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .page-title {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #111;
+            margin-bottom: 2rem;
+        }
+
+        .course-card {
+            background: white;
+            border-radius: 1rem;
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: transform 0.2s ease;
+        }
+
+        .course-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .course-title {
+            font-size: 1.75rem;
+            font-weight: 600;
+            color: #111;
+            margin-bottom: 0.5rem;
+        }
+
+        .course-description {
+            font-size: 1rem;
+            color: #666;
+            margin-top: 0.5rem;
+        }
+
+        .course-meta {
+            text-align: right;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            background-color: #111;
+            color: white;
+            text-decoration: none;
+            border-radius: 0.5rem;
+            font-weight: 500;
+            transition: background-color 0.2s ease;
+        }
+
+        .btn:hover {
+            background-color: #333;
+        }
+
+        .status-badge {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            background-color: #f0f0f0;
+            color: #666;
+            border-radius: 1rem;
+            font-size: 0.875rem;
+            margin-bottom: 0.5rem;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 1rem;
+            }
+
+            .page-title {
+                font-size: 2rem;
+                margin-bottom: 1.5rem;
+            }
+
+            .course-card {
+                flex-direction: column;
+                text-align: center;
+                padding: 1.5rem;
+            }
+
+            .course-title {
+                font-size: 1.5rem;
+            }
+
+            .course-meta {
+                text-align: center;
+                margin-top: 1rem;
+            }
+
+            .btn {
+                width: 100%;
+                text-align: center;
+                margin-top: 1rem;
+            }
+        }
+    </style>
+    <title>Convert Forms</title>
+</head>
 <body>
-    
-    <section class="fxt-template-animation fxt-template-layout30">
-        <!-- Star Animation Start Here -->
-        <canvas id="canvas"></canvas>
-        <!-- Star Animation End Here -->
-        <div class="fxt-content">
-            
-            <div class="fxt-form">
-                <p>THANK YOU FOR ACCEPTING JESUS AS YOUR LORD AND PERSONAL SAVIOUR, KINDLY COMPLETE THIS FORM.</p>
-              <iframe width="640px" height="480px" src="https://forms.office.com/r/xgxiUuqUUu?embed=true" frameborder="0" marginwidth="0" marginheight="0" style="border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
+    <div class="container">
+        <h1 class="page-title">For Counsellors Only</h1>
+        
+        <div class="course-card">
+            <div class="course-info">
+                <h2 class="course-title">Google Form</h2>
+                <div class="course-description">Light Up Ede Convert Form I</div>
             </div>
-            <div class="fxt-style-line">
-                <div class="fxt-transformY-50 fxt-transition-delay-5">
-                    <h3>Light Up Crusade, Ede</h3>
-                </div>
-            </div>
-            
-            <div class="fxt-footer">
-                <div class="fxt-transformY-50 fxt-transition-delay-9">
-                    <p>Form Powered By:<a href="https://runtechspace.com" class="switcher-text2 inline-text">RUNTECHSPACE</a></p>
-                </div>
+            <div class="course-meta">
+                <a href="https://forms.gle/kQTf7G2pAUkhke8z6" class="btn">Open</a>
             </div>
         </div>
-    </section>
-    <!-- jquery-->
-    <script src="lightup/js/jquery.min.js"></script>
-    <!-- Bootstrap js -->
-    <script src="lightup/js/bootstrap.min.js"></script>
-    <!-- Imagesloaded js -->
-    <script src="lightup/js/imagesloaded.pkgd.min.js"></script>
-    <!-- Star Animation js -->
-    <script src="lightup/js/star-animation.js"></script>
-    <!-- Validator js -->
-    <script src="lightup/js/validator.min.js"></script>
-    <!-- Custom Js -->
-    <script src="lightup/js/main.js"></script>
 
+        <div class="course-card">
+            <div class="course-info">
+                <h2 class="course-title">Google Form</h2>
+                <div class="course-description">Light Up Ede Convert Form II</div>
+            </div>
+            <div class="course-meta">
+                <a href="https://forms.gle/u1wQ5hL5JUN8xFab9" class="btn">Open</a>
+            </div>
+        </div>
+
+        <div class="course-card">
+            <div class="course-info">
+                <h2 class="course-title">Google Form</h2>
+                <div class="course-description">Light Up Ede Convert Form III</div>
+            </div>
+            <div class="course-meta">
+                <a href="https://forms.gle/Hby14LAaukd8Pv6d7" class="btn">Open</a>
+            </div>
+        </div>
+
+       
+    </div>
 </body>
-
 </html>
